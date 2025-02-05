@@ -1,0 +1,20 @@
+branch-defaults:
+  default:
+    environment: mywebapi-env
+    group_suffix: null
+  develop:
+    environment: mywebapi-env
+global:
+  application_name: MyWebApi
+  branch: null
+  default_ec2_keyname: null
+  default_platform: 64bit Amazon Linux 2023 v3.3.0 running .NET 9
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application
