@@ -31,3 +31,4 @@ C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\MyWe
 C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\MyWebApi\obj\Debug\net9.0\MyWebApi.pdb
 C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\MyWebApi\obj\Debug\net9.0\MyWebApi.genruntimeconfig.cache
 C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\MyWebApi\obj\Debug\net9.0\ref\MyWebApi.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\MyWebApi\obj\Debug\net9.0\MyWebApi.sourcelink.json

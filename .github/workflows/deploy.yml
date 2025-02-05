@@ -1,0 +1,44 @@
+name: Deploy .NET Web API to AWS Elastic Beanstalk
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Install Dependencies
+        run: dotnet restore ./APIEncryption/APIEncryption.csproj
+
+      - name: Build Project
+        run: dotnet publish ./APIEncryption/APIEncryption.csproj -c Release -o ./publish
+
+      - name: Generate Deployment Package
+        run: |
+          cd ./publish
+          zip -r ../MyWebApi.zip .
+          cd ..
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: "MyWebApi"
+          environment_name: "mywebapi-env"
+          version_label: ${{ github.sha }}
+          region: ${{ secrets.AWS_REGION }}
+          deployment_package: "MyWebApi.zip"
+
+          
