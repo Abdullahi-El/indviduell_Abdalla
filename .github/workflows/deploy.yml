@@ -24,7 +24,7 @@ jobs:
       - name: Build Project
         run: dotnet publish ./APIEncryption/APIEncryption.csproj -c Release -o ./publish
 
-      - name: Generate Deployment Package
+      - name: Generate Deployment Package 
         run: |
           cd ./publish
           zip -r ../MyWebApi.zip .
