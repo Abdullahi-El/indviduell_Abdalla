@@ -16,15 +16,14 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 9.0.x
-
+          dotnet-version: 9.0.x 
       - name: Install Dependencies
-        run: dotnet restore ./APIEncryption/APIEncryption.csproj
+        run: dotnet restore "./MyWebApi/MyWebApi.csproj"
 
       - name: Build Project
-        run: dotnet publish ./APIEncryption/APIEncryption.csproj -c Release -o ./publish
+        run: dotnet publish "./MyWebApi/MyWebApi.csproj" -c Release -o ./publish
 
-      - name: Generate Deployment Package 
+      - name: Generate Deployment Package
         run: |
           cd ./publish
           zip -r ../MyWebApi.zip .
@@ -40,5 +39,3 @@ jobs:
           version_label: ${{ github.sha }}
           region: ${{ secrets.AWS_REGION }}
           deployment_package: "MyWebApi.zip"
-
-          
