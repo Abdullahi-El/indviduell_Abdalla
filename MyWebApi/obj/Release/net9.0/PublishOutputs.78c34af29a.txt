@@ -1,0 +1,12 @@
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\MyWebApi.exe
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\appsettings.Development.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\appsettings.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\MyWebApi.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\MyWebApi.deps.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\MyWebApi.runtimeconfig.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\MyWebApi.pdb
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\Microsoft.OpenApi.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Ny mapp\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
