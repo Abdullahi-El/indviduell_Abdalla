@@ -19,15 +19,15 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Install Dependencies
-        run: dotnet restore ./APIEncryption/APIEncryption.csproj
+        run: dotnet restore ./MyWebApi/MyWebApi.csproj  # Adjusted path
 
       - name: Build Project
-        run: dotnet publish ./APIEncryption/APIEncryption.csproj -c Release -o ./publish
+        run: dotnet publish ./MyWebApi/MyWebApi.csproj -c Release -o ./publish  # Adjusted path
 
       - name: Generate Deployment Package
         run: |
           cd ./publish
-          zip -r ../MyWebApi.zip .
+          zip -r ../MyWebApi.zip .  # Ensure the zip includes the necessary runtime files
           cd ..
 
       - name: Deploy to Elastic Beanstalk
@@ -40,5 +40,5 @@ jobs:
           version_label: ${{ github.sha }}
           region: ${{ secrets.AWS_REGION }}
           deployment_package: "MyWebApi.zip"
-
-          
+          environment_variables: |
+            ASPNETCORE_ENVIRONMENT=Production  # Add any necessary variables here
