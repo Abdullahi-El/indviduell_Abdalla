@@ -34,8 +34,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: "MyWebApi"
-          environment_name: "mywebapi-env"
+          application_name: "Inlamningsuppgift"
+          environment_name: "Inlamningsuppgift-env"
           version_label: ${{ github.sha }}
           region: ${{ secrets.AWS_REGION }}
           deployment_package: "MyWebApi.zip"
